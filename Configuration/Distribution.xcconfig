@@ -1,0 +1,12 @@
+// Distribution settings for PNotch. See README › Distribution.
+//
+// Sparkle stays disabled until both values are set:
+// - SPARKLE_FEED_URL: where the appcast.xml produced by scripts/release.sh is published,
+//   e.g. https://example.com/pnotch/appcast.xml (use https).
+// - SPARKLE_PUBLIC_ED_KEY: the public key printed by Sparkle's `generate_keys`.
+//
+// `//` starts a comment in xcconfig files: the empty `$()` keeps the URL's slashes from cutting it short.
+
+// Served by GitHub Pages from the theo-mrn/pnotch-updates repository; scripts/publish.sh uploads there.
+SPARKLE_FEED_URL = https:/$()/theo-mrn.github.io/pnotch-updates/appcast.xml
+SPARKLE_PUBLIC_ED_KEY = ChEhyf6iXMwukBdPEsqBXPUQwLBStwP+b+0w2QtTIKE=
